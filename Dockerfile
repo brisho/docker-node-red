@@ -9,9 +9,9 @@ RUN apk update \
 WORKDIR /usr/src/node-red
 
 # Add node-red user so we aren't running as root
-RUN adduser -h /usr/src/node-red -D -H node-red && \
-    chown -R node-red:node-red /data && \
-    chown -R node-red:node-red /usr/src/node-red
+RUN adduser -h /usr/src/node-red -D -H node-red \
+    && chown -R node-red:node-red /data \
+    && chown -R node-red:node-red /usr/src/node-red
 
 # Switch to node-red user for the rest
 USER node-red
