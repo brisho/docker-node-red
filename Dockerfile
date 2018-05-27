@@ -2,8 +2,9 @@ FROM node:6-alpine
 
 # Create home directory for Node-RED application source code. Also
 # create user data directory to contain flows, config and nodes.
-RUN mkdir -p /usr/src/node-red && \
-    mkdir /data
+RUN apk update \
+    && apk upgrade \
+    && mkdir -p /usr/src/node-red /data
 
 WORKDIR /usr/src/node-red
 
