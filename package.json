@@ -11,13 +11,14 @@
         "start": "node $NODE_OPTIONS node_modules/node-red/red.js -v $FLOWS"
     },
     "dependencies": {
-        "node-red": "0.18.3",
+        "node-red": "0.18.7",
         "node-red-contrib-bigtimer": "*",
         "node-red-contrib-blynk-ws": "*",
         "node-red-contrib-config": "*",
         "node-red-contrib-huemagic": "*",
         "node-red-contrib-influxdb": "*",
         "node-red-contrib-mapper": "*",
+        "node-red-contrib-persist": "*",
         "node-red-contrib-routing": "*",
         "node-red-contrib-state-machine": "*",
         "node-red-contrib-timerswitch": "*",
