@@ -1,6 +1,6 @@
 {
     "name": "docker-node-red",
-    "version": "0.1.0",
+    "version": "0.2.0",
     "description": "Docker setup for Node-RED",
     "repository": {
         "type": "git",
@@ -11,13 +11,14 @@
         "start": "node $NODE_OPTIONS node_modules/node-red/red.js -v $FLOWS"
     },
     "dependencies": {
-        "node-red": "0.19.5",
+        "node-red": ">=0.20.8",
         "node-red-contrib-bigtimer": "*",
         "node-red-contrib-blynk-ws": "*",
         "node-red-contrib-config": "*",
         "node-red-contrib-huemagic": "*",
         "node-red-contrib-influxdb": "*",
         "node-red-contrib-mapper": "*",
+        "node-red-contrib-npm": "*",
         "node-red-contrib-persist": "*",
         "node-red-contrib-routing": "*",
         "node-red-contrib-state-machine": "*",
